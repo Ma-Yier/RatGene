@@ -1,6 +1,23 @@
 function [geneKnock] = verifyRatioGene(model,geneValue)
-%UNTITLED 此处显示有关此函数的摘要
-%   此处显示详细说明
+%Compute the GPR rules which are boolean functions and 
+%for any reaction aim to either knockout it or keep it. 
+%
+%function [geneKnock] = verifyRatioGene(model,geneValue)
+%
+%INPUTS
+%   model          The same struct type as the .mat file 
+%                  downloaded from BiGG
+%   geneValue      The numerical valueof gene variables
+%                  in the solution
+%
+%OUTPUTS
+%   geneKnock      The strategy indicates gene knouckouts
+%
+%
+%July 31, 2023    Ma Yier
+%
+
+
 
 % get gr rules and genes
 grRules=model.grRules;

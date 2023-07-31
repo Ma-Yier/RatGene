@@ -1,8 +1,18 @@
 function [universal_model] = uniteGeneModel(model1,model2)
-%UNTITLED 此处提供此函数的摘要
-%   此处提供详细说明
-% model1 core
-% model2 out space
+%United two models to form addition problems.
+%
+%function [universal_model] = uniteGeneModel(model1,model2)
+%
+%INPUTS
+%   model1    Core of the united model
+%   model2    The model which supply addition resources
+%
+%OUTPUTS
+%   universal_model    The integrated model
+%
+%
+%July 31, 2023    Ma Yier
+%
 
 
 % get scale info of models

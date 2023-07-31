@@ -1,8 +1,24 @@
 function [model,id_target,TMPR] = introExchange(input_model,id_biomass,id_input,id_met)
-% Detect the transport reaction of the target metabolite. If it exists,
-% return the reacion id and TMPR. If it not, add a virtual transport reaction for 
-% the target metabolite.
+%Detect the transport reaction of the target metabolite. If it exists,
+%return the reacion id and TMPR. If it not, add a virtual transport 
+%reaction for the target metabolite.
 %   
+%function [model,id_target,TMPR] = introExchange(input_model,id_biomass,id_input,id_met)
+%
+%INPUTS
+%   input_model    The same struct type as the .mat file downloaded from BiGG
+%   id_biomass     The id of biomass reaction
+%   id_input       The matrix indicate carbon source id and oxygen source id
+%   id_met         The id of target metabolite
+%
+%OUTPUTS
+%   model      The input_model with an exchange reaction for the target met
+%   id_target  The id of the target met exchanget reaction
+%   TMPR       The theoretically maximum production rate for the target met
+%
+%
+% July 31, 2023    Ma Yier
+%
 
 model=input_model;
 

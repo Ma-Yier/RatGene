@@ -1,6 +1,26 @@
 function [x_target,alpha,knockout] = ratioMethod(model,id_biomass,id_target,max_loop,gap,timeLimit)
-%UNTITLED8 此处显示有关此函数的摘要
-%   此处显示详细说明
+%Contruct the problem and solve to obtain reaction deletion or reaction deletion/addition
+%strategies.
+%
+%function [x_target,alpha,knockout] = ratioMethod ...,
+%         (model,id_biomass,id_target,max_loop,gap,timeLimit)
+%
+%INPUTS
+%   model        The same struct type as the .mat file downloaded from BiGG
+%   id_biomass   The id of biomass reaction
+%   id_target    The id of the target met exchanget reaction
+%   max_loop     Maximum number of iterations
+%   gap          Change of the value of alpha in each loop
+%   timeLimit    Time limit for the computation
+%
+%OUTPUTS
+%   x_target    The reaction rate of target reaction after modification
+%   alpha       The value of alpha when the strategy is obtained
+%   knockout    The obtained strategies after validation
+%
+%
+% July 31, 2023    Ma Yier
+%
 
 alpha=0;
 [m,n]=size(model.S);

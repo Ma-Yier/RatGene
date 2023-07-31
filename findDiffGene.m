@@ -1,6 +1,18 @@
-function [genesid] = findDiffGene(model,diff_rxns);
-%UNTITLED3 此处显示有关此函数的摘要
-%   此处显示详细说明
+function [genesid] = findDiffGene(model,diff_rxns)
+%Find all genes refer to a set of reactions.
+%
+%function [genesid] = findDiffGene(model,diff_rxns)
+%
+%INPUTS
+%   model    The same struct type as the .mat file downloaded from BiGG
+%   diff_rxns A set of reactions
+%
+%OUTPUTS
+%   genesid    The id of genes found
+%
+%
+% July 31, 2023    Ma Yier
+%
 
 label=1;
 

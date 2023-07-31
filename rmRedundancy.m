@@ -1,6 +1,27 @@
-function [preNumKnockouts,afterNumKnockouts,newKnockouts] = rmRedundancy(model,knockouts,id_target,id_biomass,split)
-%UNTITLED 此处显示有关此函数的摘要
-%   此处显示详细说明
+function [preNumKnockouts,afterNumKnockouts,newKnockouts] =  ...,
+    rmRedundancy(model,knockouts,id_target,id_biomass,split)
+%Apply two-step approach to reduce the size of strategies.
+%
+%function [preNumKnockouts,afterNumKnockouts,newKnockouts] =  ...,
+%   rmRedundancy(model,knockouts,id_target,id_biomass,split)
+%
+%INPUTS
+%   model        The same struct type as the .mat file downloaded 
+%                from BiGG
+%   id_biomass   The id of biomass reaction
+%   id_target    The id of the target met exchanget reaction
+%   knockouts    The obtained strategies after validation
+%   split        The index indicate the endpoint id of original 
+%                genes and reactions
+%
+%OUTPUTS
+%   preNumKnockouts    The size of strategy before reduction
+%   afterNumKnockouts  The size of strategy after reduction
+%   newKnockouts       The new strategy with a reduced size
+%
+%
+%July 31, 2023    Ma Yier
+%
 
     afterNumKnockouts=-1;
     preNumKnockouts=-1;

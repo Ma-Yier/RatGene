@@ -1,6 +1,23 @@
 function [parInfo,nRxn,nGen,nAux,nRelation,nEqual,gprLabel] = minParseGPR(model)
-%UNTITLED 此处显示有关此函数的摘要
-%   analyze the GPR rules
+%Analyze the GPR rules and parse the GPR rules to minimal linear relationships.
+%
+%function [parInfo,nRxn,nGen,nAux,nRelation,nEqual,gprLabel] = maxParseGPR(model)
+%
+%INPUTS
+%   model    The same struct type as the .mat file downloaded from BiGG
+%
+%OUTPUTS
+%   parInfo    Decomposed clauses
+%   nRxn    Number of reactions in the model
+%   nGen    Number of genes in the model
+%   nAux    Number of auxiliary clauses for boolean functions
+%   nRelation Number of single boolean functions
+%   nEqual    Number of reactions with single genes
+%   gprLabel  Indicate a reactions with a GPR rule or without a GPR rule
+%
+%
+% July 31, 2023    Ma Yier
+%
 
 % data scale 
 nRxn=size(model.rxns,1);

@@ -1,6 +1,27 @@
-function [lessMatrixLeft,lessMatrixRight,equalMatrixLeft,equalMatrixRight,nGpr,nAux,nGen,indGPR] = constructMatrix(model)
-%UNTITLED2 此处显示有关此函数的摘要
-%   此处显示详细说明
+function [lessMatrixLeft,lessMatrixRight,equalMatrixLeft,equalMatrixRight,nGpr,nAux,nGen,indGPR] ...,
+    = constructMatrix(model)
+%Extract the GPR rules from the model to construct the matrix that forms
+%the relationships of the boolean functions. 
+%
+%function [lessMatrixLeft,lessMatrixRight,equalMatrixLeft,equalMatrixRight,nGpr,nAux,nGen,indGPR] ...,
+%   = constructMatrix(model)
+%
+%INPUTS
+%   model    The same struct type as the .mat file downloaded from BiGG
+%
+%OUTPUTS
+%   lessMarixLeft    The left side of an inequality part for an optimization problem
+%   lessMatrixRight  The right side of an inequality part for an optimization problem  
+%   equalMatrixLeft  The left side of an equality part for an optimization problem
+%   equalMatrixRight The right side of an equality part for an optimization problem
+%   nGpr    Number of reactions with GPR rules
+%   nAux    Number of auxiliary clauses for boolean functions
+%   nGen    Number of genes in the model
+%   indGPR  The index of reactions with GPR rules
+%
+%
+% July 31, 2023    Ma Yier
+%
 
 
 % obtain parsing GPR info

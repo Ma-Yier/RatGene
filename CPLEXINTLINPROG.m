@@ -1,6 +1,26 @@
 function [cplex,x] = CPLEXINTLINPROG(f,A,b,Aeq,beq,lb,ub,ctype)
-%UNTITLED2 此处显示有关此函数的摘要
-%   此处显示详细说明
+%Form IBM CPLEX Cplex class for an MILP problem and solve it with pooling
+%by IBM CPLEX solver.
+%
+%function [cplex,x] = CPLEXINTLINPROG(f,A,b,Aeq,beq,lb,ub,ctype)
+%
+%INPUTS
+%   f    Objective function
+%   A    Inequality left part
+%   b    Inequality right part
+%   Aeq  Equality left part
+%   beq  Equality right part
+%   lb   Lower bound of variables
+%   ub   Upper bound of variables
+%   ctype Type of variables - continues or integer or binary
+%
+%OUTPUTS
+%   cplex    IBM CPLEX cplex class with results of solver computation
+%   x        The solutions if have. [] for no solution after computation
+%
+%
+% July 31, 2023    Ma Yier
+%
 
 
 model.obj=f;

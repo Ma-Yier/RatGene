@@ -1,6 +1,22 @@
 function [objLoc] = locateGene(nRxn,nGpr,nAux,indRea,objGene,model)
-%UNTITLED3 此处显示有关此函数的摘要
-%   此处显示详细说明
+%Find the location for a gene in the variable.
+%
+%function [objLoc] = locateGene(nRxn,nGpr,nAux,indRea,objGene,model)
+%
+%INPUTS
+%   nRxn    Number of reactions in the model
+%   nGpr    Number of reactions with GPR rules
+%   nAux    Number of auxiliary clauses for boolean functions
+%   indRea  Index of reactions that trim reactions having no grRules
+%   objGene The name of object gene
+%   model   The same struct type as the .mat file downloaded from BiGG
+%
+%OUTPUTS
+%   objLoc    The location of the gene
+%
+%
+% July 31, 2023    Ma Yier
+%
 
 % get name length
 geneNameLen=size(objGene,2);
