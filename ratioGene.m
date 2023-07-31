@@ -8,7 +8,7 @@ function [x_target,alpha,knockout] = ratioGene(model,id_biomass,id_target,TMGR,m
 %INPUTS
 %   model           The same struct type as the .mat file downloaded from BiGG
 %   id_biomass      The id of biomass reaction
-%   id_target       The id of the target met exchanget reaction
+%   id_target       The id of the target met exchange reaction
 %   TMGR            The theoretically maximum growth rate
 %   max_loop        Maximum number of iterations
 %   gap             Change of the value of alpha in each loop

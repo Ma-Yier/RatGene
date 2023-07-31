@@ -8,7 +8,7 @@ function [x_target,alpha,knockout] = ratioMethod(model,id_biomass,id_target,max_
 %INPUTS
 %   model        The same struct type as the .mat file downloaded from BiGG
 %   id_biomass   The id of biomass reaction
-%   id_target    The id of the target met exchanget reaction
+%   id_target    The id of the target met exchange reaction
 %   max_loop     Maximum number of iterations
 %   gap          Change of the value of alpha in each loop
 %   timeLimit    Time limit for the computation

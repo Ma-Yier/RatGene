@@ -13,7 +13,7 @@ function [model,id_target,TMPR] = introExchange(input_model,id_biomass,id_input,
 %
 %OUTPUTS
 %   model      The input_model with an exchange reaction for the target met
-%   id_target  The id of the target met exchanget reaction
+%   id_target  The id of the target met exchange reaction
 %   TMPR       The theoretically maximum production rate for the target met
 %
 %

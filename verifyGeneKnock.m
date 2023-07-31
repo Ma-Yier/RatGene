@@ -1,6 +1,23 @@
 function [XX,input_xg] = verifyGeneKnock(input_model,input_x,indGPR,id_biomass,id_target,min_bound)
-%UNTITLED6 此处显示有关此函数的摘要
-% 
+%Verify whether the gene deletion or deletion/addition strategy is valid.
+%
+%function [XX,input_xg] = verifyGeneKnock(input_model,input_x,indGPR,id_biomass,id_target,min_bound)
+%
+%INPUTS
+%   input_model    The same struct type as the .mat file downloaded from BiGG
+%   input_x        The gene modification strategy
+%   indGPR         The index refer to the reactions with GPR rules
+%   id_biomass     The id of biomass reaction
+%   id_target      The id of the target met exchange reaction
+%   min_bound      Minimum threshold for the biomass growth reaction
+%
+%OUTPUTS
+%   XX        The target reaction rate after the modification
+%   input_xg  The modification strategy
+%
+%
+% July 31, 2023    Ma Yier
+%
 
 model=input_model;
 input_xg=zeros(size(input_x));
