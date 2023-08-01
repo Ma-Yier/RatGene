@@ -1,4 +1,59 @@
 function [x_target,varargout] = RatGene(model,targetMet,varargin)
+%RatGene adopts a ratio-based method to iteratively construct a series of
+%mixed integer linear programming problems and solve them one by one to
+%obtain candidate modification strategies for various networks until
+%generating a solution that will satisfy the criterion of problem setting
+%after the validation procedures. Optionally, the output results could be
+%processed by a two-step approach to reduce the size of the modification
+%strategy after the validation procedures and the new trimmed-size strategy
+%will satisfy the criterion as well.
+%
+%function [x_target,varargout] = RatGene(model,targetMet,varargin)
+%
+%INPUTS
+%   model      The same struct type as the .mat file downloaded from BiGG
+%   targetMet  The target metabolite, should be a cell or a char
+%
+%OPTIONAL INPUTS
+%   biomass    The biomass reaction in the model and it should be a cell
+%              or a char (default: the growth reaction in the model)
+%   carbon     The carbon source of the defined problem and it should be
+%              a cell or a char (default: EX_glc__D_e)
+%   oxygen     The input oxygen of the defined problem and it should be a
+%              cell or a char (default: EX_o2_e)
+%   LBbiomass  The lower thresold of the biomass reaction (default: 0.05)
+%   LBcarbon   The lower threshold of the input carbon source exchange
+%              reaction and it should be a negative value (default: -15)
+%   LBoxygen   The lower threshold of the input oxygen source exchange
+%              reaction and it should be a negative value (default: -15)
+%   maxLoop    The maximum iterations assigned to RatGene ratio-based
+%              procedures (default: 1000)
+%   timeLimit  The maximum computation time for the method (default: inf)
+%   pool       The number of solutions obtained from the IBM CPLEX solution
+%              pool (default: 10)
+%   type       The type of modification strategy, 1 for gene and 0 for
+%              reaction (default: 1)
+%   size       Whether reduce the size of the output strategy, 1 for ture
+%              and 0 for false (default: 1)
+%   addition   Another model with the same struct type as the .mat file
+%              downloaded from BiGG to supply additional information if the
+%              problem is defined as deletion/addition problem.
+%
+%OUTPUTS
+%   x_target   The exchange reaction rate for the production of the target
+%              metabolite under the condition of applying the output
+%              modification strategy to the model.
+%
+%OPTIONAL OUTPUTS
+%   Knockouts  A cell of the name list of knockout strategy indicates which
+%              genes or reactions to be knocked out.
+%   Additions  A cell of the name list of addition strategy indicates which
+%              genes or reactions to be added up.
+%
+%
+% August 1, 2023    Ma Yier
+%
+
 
     
     % taeget id
