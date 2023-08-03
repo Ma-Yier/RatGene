@@ -20,7 +20,7 @@ The `test1.m` demostrates the process of computing a gene knockout strategy for 
 ```
 test1
 ```
-And the results will be save as `results_test1.mat` and be printed as:
+And the results will be save in `results_test1.mat` and be printed as:
 ```
 The TMGR is: 0.9662 mmol/gDW/h 
 continue to RatGene...
