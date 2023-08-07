@@ -20,7 +20,7 @@ function [preNumKnockouts,afterNumKnockouts,newKnockouts] =  ...,
 %   newKnockouts       The new strategy with a reduced size
 %
 %
-%July 31, 2023    Ma Yier
+% July 31, 2023    Ma Yier
 %
 
     afterNumKnockouts=-1;
