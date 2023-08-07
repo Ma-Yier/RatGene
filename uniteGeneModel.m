@@ -11,7 +11,7 @@ function [universal_model] = uniteGeneModel(model1,model2)
 %   universal_model    The integrated model
 %
 %
-%July 31, 2023    Ma Yier
+% July 31, 2023    Ma Yier
 %
 
 
