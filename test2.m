@@ -33,4 +33,4 @@ fprintf('continue to RatGene...\n');
 fprintf('The number of gene knockouts is: %d \n', numel(knockouts));
 fprintf('The number of gene additions is: %d \n', numel(additions));
 fprintf('The target reaction rate with the strategy applied: %.4f mmol/gDW/h \n', x);
-save('results_test1.mat');
+save('results_test2.mat');

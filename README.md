@@ -27,3 +27,16 @@ continue to RatGene...
 The number of gene knockouts is: 455 
 The target reaction rate with the strategy applied: 11.4718 mmol/gDW/h 
 ```
+
+The `test2.m` displays another instance of computing a gene modification strategy with both deletions and additions for the production of ethanol in yeast fermentation. The two models used are [`iMM904`](http://bigg.ucsd.edu/models/iMM904) and[`iJR904`](http://bigg.ucsd.edu/models/iJR904). Run the following code in the command line of MATLAB:
+```
+test2
+```
+And the results will be save in `results_test2.mat` and be printed as:
+```
+The TMGR is: 0.9662 mmol/gDW/h 
+continue to RatGene...
+The number of gene knockouts is:  
+The number of gene additions is: 
+The target reaction rate with the strategy applied:  mmol/gDW/h 
+```
