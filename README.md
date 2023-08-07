@@ -16,7 +16,8 @@ A ratio-based generalized approach that is capable of fulfilling a variety of mo
 ## Instructions
 
 ### Running Examples
-The `test1.m` demostrates the process of computing a gene knockout strategy for the production of ethanol which is a valuable biofuel and industrial solvent in yeast fermentation. The model used is `iMM904` downloaded from [BiGG](http://bigg.ucsd.edu/models/iMM904) database. Run the following code in the command line of MATLAB:
+#### Example 1
+The `test1.m` demostrates the process of computing a gene knockout strategy for the production of ethanol which is a valuable biofuel and industrial solvent in yeast fermentation. The model used is [`iMM904`](http://bigg.ucsd.edu/models/iMM904) downloaded from [BiGG](http://bigg.ucsd.edu/) database. Run the following code in the command line of MATLAB:
 ```
 test1
 ```
@@ -27,7 +28,7 @@ continue to RatGene...
 The number of gene knockouts is: 455 
 The target reaction rate with the strategy applied: 11.4718 mmol/gDW/h 
 ```
-
+#### Example 2
 The `test2.m` displays another instance of computing a gene modification strategy with both deletions and additions for the production of ethanol in yeast fermentation. The two models used are [`iMM904`](http://bigg.ucsd.edu/models/iMM904) and[`iJR904`](http://bigg.ucsd.edu/models/iJR904). Run the following code in the command line of MATLAB:
 ```
 test2
