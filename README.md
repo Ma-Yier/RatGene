@@ -25,6 +25,7 @@ RatGene adopts a ratio-based method to iteratively construct a series of mixed i
 ```
 
 #### INPUTS
+   |Parameters|Instructions|
    |:---|:---|
    |model|      The same struct type as the .mat file downloaded from BiGG|  
    |targetMet|  The target metabolite, should be a cell or a char|  
