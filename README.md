@@ -15,6 +15,9 @@ A ratio-based generalized approach that is capable of fulfilling a variety of mo
 
 ## Instructions
 
+### Usage
+
+
 ### Running Examples
 #### Example 1
 The `test1.m` demostrates the process of computing a gene knockout strategy for the production of ethanol which is a valuable biofuel and industrial solvent in yeast fermentation. The model used is [`iMM904`](http://bigg.ucsd.edu/models/iMM904) downloaded from [BiGG](http://bigg.ucsd.edu/) database. Run the following code in the command line of MATLAB:
