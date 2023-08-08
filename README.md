@@ -27,31 +27,29 @@ RatGene adopts a ratio-based method to iteratively construct a series of mixed i
 #### INPUTS
    |Parameters|Instructions|
    |:---|:---|
-   |model|      The same struct type as the .mat file downloaded from BiGG|  
-   |targetMet|  The target metabolite, should be a cell or a char|  
-
-#### OPTIONAL INPUTS
-   - biomass    The biomass reaction in the model and it should be a cell
+   |+ model|      The same struct type as the .mat file downloaded from BiGG|  
+   |+ targetMet|  The target metabolite, should be a cell or a char|  
+   |- biomass|    The biomass reaction in the model and it should be a cell
               or a char (default: the growth reaction in the model)  
-   - carbon     The carbon source of the defined problem and it should be
+   |- carbon|     The carbon source of the defined problem and it should be
               a cell or a char (default: EX_glc__D_e)  
-   - oxygen     The input oxygen of the defined problem and it should be a
+   |- oxygen|     The input oxygen of the defined problem and it should be a
               cell or a char (default: EX_o2_e)  
-   - LBbiomass  The lower thresold of the biomass reaction (default: 0.05)  
-   - LBcarbon   The lower threshold of the input carbon source exchange
+   |- LBbiomass|  The lower thresold of the biomass reaction (default: 0.05)  
+   |- LBcarbon|   The lower threshold of the input carbon source exchange
               reaction and it should be a negative value (default: -15)  
-   - LBoxygen   The lower threshold of the input oxygen source exchange
+   |- LBoxygen|   The lower threshold of the input oxygen source exchange
               reaction and it should be a negative value (default: -15)  
-   - maxLoop    The maximum iterations assigned to RatGene ratio-based
+   |- maxLoop|    The maximum iterations assigned to RatGene ratio-based
               procedures (default: 1000)  
-   - timeLimit  The maximum computation time for the method (default: inf)  
-   - pool       The number of solutions obtained from the IBM CPLEX solution
+   |- timeLimit|  The maximum computation time for the method (default: inf)  
+   |- pool|       The number of solutions obtained from the IBM CPLEX solution
               pool (default: 10)  
-   - type       The type of modification strategy, 1 for gene and 0 for
+   |- type|       The type of modification strategy, 1 for gene and 0 for
               reaction (default: 1)  
-   - size       Whether reduce the size of the output strategy, 1 for ture
+   |- size|       Whether reduce the size of the output strategy, 1 for ture
               and 0 for false (default: 1)  
-   - addition   Another model with the same struct type as the .mat file
+   |- addition|   Another model with the same struct type as the .mat file
               downloaded from BiGG to supply additional information if the
               problem is defined as deletion/addition problem.  
 
