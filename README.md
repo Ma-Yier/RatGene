@@ -39,7 +39,8 @@ RatGene adopts a ratio-based method to iteratively construct a series of mixed i
    |pool|       The number of solutions obtained from the IBM CPLEX         solution pool (default: 10)|        
    |type|       The type of modification strategy, 1 for gene and 0 for reaction (default: 1)|   
    |size|       Whether reduce the size of the output strategy, 1 for ture and 0 for false (default: 1)|   
-   |addition|   Another model with the same struct type as the .mat file downloaded from BiGG to supply additional information if the problem is defined as deletion/addition problem.|  
+   |addition|   Another model with the same struct type as the .mat file downloaded from BiGG to supply additional information if the problem is defined as deletion/addition problem.| 
+ 
 NOTE: Parameters except for *model* and *targetMet* are optional inputs.    
 
 #### OUTPUTS
@@ -47,7 +48,8 @@ NOTE: Parameters except for *model* and *targetMet* are optional inputs.
    |:---|:---|
    |*xTarget*|   The exchange reaction rate for the production of the target metabolite under the condition of applying the output modification strategy to the model.|  
    |Knockouts|  A cell of the name list of knockout strategy indicates which genes or reactions to be knocked out.|  
-   |Additions|  A cell of the name list of addition strategy indicates which genes or reactions to be added up.|  
+   |Additions|  A cell of the name list of addition strategy indicates which genes or reactions to be added up.|
+  
 NOTE: Solutions except for *xTarget* are optional outputs.
   
 ### Usage
