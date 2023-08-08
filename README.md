@@ -18,12 +18,11 @@ A ratio-based generalized approach that is capable of fulfilling a variety of mo
 
 RatGene adopts a ratio-based method to iteratively construct a series of mixed integer linear programming problems and solve them one by one to obtain candidate modification strategies for various networks until generating a solution that will satisfy the criterion of problem setting after the validation procedures. Optionally, the output results could be processed by a two-step approach to reduce the size of the modification strategy after the validation procedures and the new trimmed-size strategy will satisfy the criterion as well.
 
-### Usage
+### Function
 
 ```
 [xTarget,varargout] = RatGene(model,targetMet,varargin)
 ```
-
 #### INPUTS
    |Parameters| |
    |:---|:---|
@@ -43,12 +42,13 @@ RatGene adopts a ratio-based method to iteratively construct a series of mixed i
    |addition|   Another model with the same struct type as the .mat file downloaded from BiGG to supply additional information if the problem is defined as deletion/addition problem.|   
 
 #### OUTPUTS
-   |Parameters| |
+   |Solutions| |
    |:---|:---|
    |*xTarget*|   The exchange reaction rate for the production of the target metabolite under the condition of applying the output modification strategy to the model.|  
    |Knockouts|  A cell of the name list of knockout strategy indicates which genes or reactions to be knocked out.|  
-   |Additions|  A cell of the name list of addition strategy indicates which genes or reactions to be added up.|  
-
+   |Additions|  A cell of the name list of addition strategy indicates which genes or reactions to be added up.|
+  
+### Usage
 
 ### Running Examples
 #### Example 1
