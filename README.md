@@ -25,10 +25,10 @@ RatGene adopts a ratio-based method to iteratively construct a series of mixed i
 ```
 
 #### INPUTS
-   |Parameters|Instructions|
+   |Parameters| |
    |:---|:---|
-   |**model**|      The same struct type as the .mat file downloaded from BiGG|  
-   |**targetMet**|  The target metabolite, should be a cell or a char|  
+   |*model*|      The same struct type as the .mat file downloaded from BiGG|  
+   |*targetMet*|  The target metabolite, should be a cell or a char|  
    |biomass|    The biomass reaction in the model and it should be a cell or a char (default: the growth reaction in the model)|  
    |carbon|     The carbon source of the defined problem and it should be a cell or a char (default: EX_glc__D_e)|  
    |oxygen|     The input oxygen of the defined problem and it should be a cell or a char (default: EX_o2_e)|  
@@ -43,7 +43,7 @@ RatGene adopts a ratio-based method to iteratively construct a series of mixed i
    |addition|   Another model with the same struct type as the .mat file downloaded from BiGG to supply additional information if the problem is defined as deletion/addition problem.|   
 
 #### OUTPUTS
-   |Parameters|Instructions|
+   |Parameters| |
    |:---|:---|
    |*xTarget*|   The exchange reaction rate for the production of the target metabolite under the condition of applying the output modification strategy to the model.|  
    |Knockouts|  A cell of the name list of knockout strategy indicates which genes or reactions to be knocked out.|  
