@@ -4,6 +4,7 @@ Growth to production ratio-based design algorithms for constraint-based metaboli
 
 
 ## Introduction
+
 A ratio-based generalized approach that is capable of fulfilling a variety of modification criteria at both the gene and reaction levels. Additionally, RatGene also delivers the results with reduced-size strategies for the deletion or addition on both gene levels.
 
 
@@ -15,14 +16,18 @@ A ratio-based generalized approach that is capable of fulfilling a variety of mo
 
 ## Instructions
 
+RatGene adopts a ratio-based method to iteratively construct a series of mixed integer linear programming problems and solve them one by one to obtain candidate modification strategies for various networks until generating a solution that will satisfy the criterion of problem setting after the validation procedures. Optionally, the output results could be processed by a two-step approach to reduce the size of the modification strategy after the validation procedures and the new trimmed-size strategy will satisfy the criterion as well.
+
 ### Usage
+
 ```
 [xTarget,varargout] = RatGene(model,targetMet,varargin)
 ```
 
 #### INPUTS
-   + model      The same struct type as the .mat file downloaded from BiGG  
-   + targetMet  The target metabolite, should be a cell or a char  
+   |:---|:---|
+   |model|      The same struct type as the .mat file downloaded from BiGG|  
+   |targetMet|  The target metabolite, should be a cell or a char|  
 
 #### OPTIONAL INPUTS
    - biomass    The biomass reaction in the model and it should be a cell
