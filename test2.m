@@ -26,7 +26,7 @@ fprintf('The TMGR is: %.4f mmol/gDW/h \n', opt.f);
 fprintf('continue to RatGene...\n');
 
 % execute RatGene
-[x,knockouts,additions]=RatGene(model,model.mets{562},'LBoxygen',-20, ...,
+[x,knockouts,additions]=RatGene(model,model.mets{608},'LBoxygen',-20, ...,
     'LBcarbon',-15,'timeLimit',500,'addition',iJR904);
 
 % output the results and save
