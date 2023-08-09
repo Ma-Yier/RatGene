@@ -16,7 +16,7 @@ A ratio-based generalized approach that is capable of fulfilling a variety of mo
 
 ## Instructions
 
-RatGene adopts a ratio-based method to iteratively construct a series of mixed integer linear programming problems and solve them one by one to obtain candidate modification strategies for various networks until generating a solution that will satisfy the criterion of problem setting after the validation procedures. Optionally, the output results could be processed by a two-step approach to reduce the size of the modification strategy after the validation procedures and the new trimmed-size strategy will satisfy the criterion as well.
+RatGene adopts a ratio-based method to iteratively construct a series of mixed integer linear programming problems and solve them one by one to obtain candidate modification strategies for various networks until generating a solution that will satisfy the criterion of the problem setting after the validation procedures. Optionally, the output results could be processed by a two-step approach to reduce the size of the modification strategy after the validation procedures and the new trimmed-size strategy will satisfy the criterion as well.
 
 ### Function
 
@@ -60,7 +60,7 @@ The `test1.m` demostrates the process of computing a gene knockout strategy for 
 ```
 test1
 ```
-And the results will be save in `results_test1.mat` and be printed as:
+Then the results will be save in `results_test1.mat` and be printed as:
 ```
 The TMGR is: 0.9662 mmol/gDW/h 
 continue to RatGene...
@@ -68,15 +68,15 @@ The number of gene knockouts is: 455
 The target reaction rate with the strategy applied: 11.4718 mmol/gDW/h 
 ```
 #### Example 2
-The `test2.m` displays another instance of computing a gene modification strategy with both deletions and additions for the production of ethanol in yeast fermentation. The two models used are [`iMM904`](http://bigg.ucsd.edu/models/iMM904) and[`iJR904`](http://bigg.ucsd.edu/models/iJR904). Run the following code in the command line of MATLAB:
+The `test2.m` displays another instance of computing a gene modification strategy with both deletions and additions for the production of isobuanol which is a potential biofuel and a chemical building block used in various industries by yeast fermentation. The two models used are [`iMM904`](http://bigg.ucsd.edu/models/iMM904) and[`iJR904`](http://bigg.ucsd.edu/models/iJR904). Run the following code in the command line of MATLAB:
 ```
 test2
 ```
-And the results will be save in `results_test2.mat` and be printed as:
+Then the results will be save in `results_test2.mat` and be printed as:
 ```
 The TMGR is: 0.9662 mmol/gDW/h 
 continue to RatGene...
-The number of gene knockouts is:  
-The number of gene additions is: 
-The target reaction rate with the strategy applied:  mmol/gDW/h 
+The number of gene knockouts is: 554  
+The number of gene additions is: 71
+The target reaction rate with the strategy applied: 4556.3086 mmol/gDW/h 
 ```
