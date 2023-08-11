@@ -18,12 +18,12 @@ A ratio-based generalized approach that is capable of fulfilling a variety of mo
 
 RatGene adopts a ratio-based method to iteratively construct a series of mixed integer linear programming problems and solve them one by one to obtain candidate modification strategies for various networks until generating a solution that will satisfy the criterion of the problem setting after the validation procedures. Optionally, the output results could be processed by a two-step approach to reduce the size of the modification strategy after the validation procedures and the new trimmed-size strategy will satisfy the criterion as well.
 
-### Function
+#### Function
 
 ```
 [xTarget,varargout] = RatGene(model,targetMet,varargin)
 ```
-#### INPUTS
+###### INPUTS
    |Parameters| |
    |:---|:---|
    |*model*|      The same struct type as the .mat file downloaded from BiGG|  
@@ -43,7 +43,7 @@ RatGene adopts a ratio-based method to iteratively construct a series of mixed i
  
 NOTE: Parameters except for *model* and *targetMet* are optional inputs.    
 
-#### OUTPUTS
+###### OUTPUTS
    |Solutions| |
    |:---|:---|
    |*xTarget*|   The exchange reaction rate for the production of the target metabolite under the condition of applying the output modification strategy to the model.|  
@@ -53,7 +53,7 @@ NOTE: Parameters except for *model* and *targetMet* are optional inputs.
 NOTE: Solutions except for *xTarget* are optional outputs.
   
 ***
-### Usage
+#### Usage
 + `[~,knockouts] = RatGene(model,targetMet)` returns the deletion strategy of the `targetMet` in the `model`.
 + `[~,knockouts] = RatGene(model,targetMet,'biomass',biomass,'carbon',carbon,'oxygen',oxygen)` returns the deletion strategy of the `targetMet` in the `model` of which the biomass growth reaction, the carbon source exchange reaction and the oxygen source exchange reaction are assigned.
 + `[~,knockouts] = RatGene(model,targetMet,'LBbiomass',LBbiomass,'LBcarbon',LBcarbon,'LBoxygen',LBoxygen)` returns the deletion strategy of the `targetMet` in the `model` with the minimum threshold of three reactions assigned.
@@ -64,8 +64,8 @@ NOTE: Solutions except for *xTarget* are optional outputs.
 
 
 ***
-### Running Examples
-#### Example 1
+#### Running Examples
+###### Example 1
 The `test1.m` demostrates the process of computing a gene knockout strategy for the production of ethanol which is a valuable biofuel and industrial solvent in yeast fermentation. The model used is [`iMM904`](http://bigg.ucsd.edu/models/iMM904) downloaded from [BiGG](http://bigg.ucsd.edu/) database. Run the following code in the command line of MATLAB:
 ```
 test1
@@ -77,7 +77,7 @@ continue to RatGene...
 The number of gene knockouts is: 455 
 The target reaction rate with the strategy applied: 11.4718 mmol/gDW/h 
 ```
-#### Example 2
+###### Example 2
 The `test2.m` displays another instance of computing a gene modification strategy with both deletions and additions for the production of isobuanol which is a potential biofuel and a chemical building block used in various industries by yeast fermentation. The two models used are [`iMM904`](http://bigg.ucsd.edu/models/iMM904) and[`iJR904`](http://bigg.ucsd.edu/models/iJR904). Run the following code in the command line of MATLAB:
 ```
 test2
