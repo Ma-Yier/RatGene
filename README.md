@@ -52,10 +52,12 @@ NOTE: Parameters except for *model* and *targetMet* are optional inputs.
   
 NOTE: Solutions except for *xTarget* are optional outputs.
   
+***
 ### Usage
-+ `[~,knockouts]=RatGene(model,targetMet)` returns the deletion strategy of the `targetMet` in the `model`.
-+ `[~,knockouts]=RatGene(model,targetMet,'biomass',biomass,'carbon',carbon,'oxygen',oxygen)` returns the deletion strategy of the `targetMet` in the `model` of which the biomass growth reaction, the carbon source exchange reaction and the oxygen source exchange reaction are assigned.
++ `[~,knockouts] = RatGene(model,targetMet)` returns the deletion strategy of the `targetMet` in the `model`.
++ `[~,knockouts] = RatGene(model,targetMet,'biomass',biomass,'carbon',carbon,'oxygen',oxygen)` returns the deletion strategy of the `targetMet` in the `model` of which the biomass growth reaction, the carbon source exchange reaction and the oxygen source exchange reaction are assigned.
 
+***
 ### Running Examples
 #### Example 1
 The `test1.m` demostrates the process of computing a gene knockout strategy for the production of ethanol which is a valuable biofuel and industrial solvent in yeast fermentation. The model used is [`iMM904`](http://bigg.ucsd.edu/models/iMM904) downloaded from [BiGG](http://bigg.ucsd.edu/) database. Run the following code in the command line of MATLAB:
