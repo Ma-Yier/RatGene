@@ -53,6 +53,8 @@ NOTE: Parameters except for *model* and *targetMet* are optional inputs.
 NOTE: Solutions except for *xTarget* are optional outputs.
   
 ### Usage
++ `[~,knockouts]=RatGene(model,targetMet)` returns the deletion strategy of the `targetMet` in the `model`.
++ `[~,knockouts]=RatGene(model,targetMet,'biomass',biomass,'carbon',carbon,'oxygen',oxygen)` returns the deletion strategy of the `targetMet` in the `model` of which the biomass growth reaction, the carbon source exchange reaction and the oxygen source exchange reaction are assigned.
 
 ### Running Examples
 #### Example 1
