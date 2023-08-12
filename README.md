@@ -59,7 +59,7 @@ NOTE: Solutions except for *xTarget* are optional outputs.
 + `[~,knockouts] = RatGene(model,targetMet,'LBbiomass',LBbiomass,'LBcarbon',LBcarbon,'LBoxygen',LBoxygen)` returns the deletion strategy of the `targetMet` in the `model` with the minimum threshold of three reactions assigned.
 + `[~,knockouts] = RatGene(model,targetMet,'maxLoop',maxLoop,'timeLimit',timeLimit,'pool',pool)` returns the deletion strategy of the `targetMet` in the `model` and the parameters limit the maximum number of loops, the maximum computation time, the number of pools, the type of modification strategyies and the excution of reduction approaches.
 + `[~,knockouts] = RatGene(model,targetMet,'type',type,'size',size)` returns the deletion strategy of the `targetMet` in the `model`. The parameter `type` resolves the gene modification strategy or the reaction modification strategy and `size` decides whether the function executes the reduction processes. Please note that the reduction processes are only available to gene modification strategies.
-+ `[~,knockouts,additions] = RatGene(...,'addition',model2)` returns the deletion and addition strategy at the same time with various options as described above.
++ `[~,knockouts,additions] = RatGene(...,'addition',model2)` returns the deletion and addition strategy at the same time with various options as described above. `model2` is another model which supplies additional information for the addition strategy.
 + `[xTarget,...] = RatGene(...)` returns an extra solution which is the target reaction rate when the modification strategy is applied to the model.
 
 
