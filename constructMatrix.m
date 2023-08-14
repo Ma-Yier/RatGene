@@ -44,7 +44,7 @@ nMet=size(model.S,1);
 gprMatrixLeft=zeros(nRelation,nRxn+nGpr+nGen+nAux);
 gprMatrixRight=zeros(nRelation,1);
 
-% lb*y<=v<=ub*y
+% lb*y <= v <= ub*y
 gprLabelDiag=diag(gprLabel);
 grCorrelationRxn=gprLabelDiag(indGPR,:);
 boundMatrixLeft=[grCorrelationRxn,-diag(model.ub(indGPR,:)),zeros(nGpr,nGen+nAux); ...,
