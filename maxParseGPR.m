@@ -1,5 +1,6 @@
 function [parInfo,nRxn,nGen,nAux,nRelation,nEqual,gprLabel] = maxParseGPR(model)
-%Analyze the GPR rules and parse the GPR rules to linear relationships.
+%Analyze the GPR rules and parse the GPR rules to linear
+%relationships.Loose the number of auxilary genes.
 %
 %function [parInfo,nRxn,nGen,nAux,nRelation,nEqual,gprLabel] = maxParseGPR(model)
 %
