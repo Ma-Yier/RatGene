@@ -1,5 +1,5 @@
 function [genesid] = findDiffGene(model,diff_rxns)
-%Find all genes refer to a set of reactions.
+%Find all genes refer to a set of reactions.Return is the gene ids.
 %
 %function [genesid] = findDiffGene(model,diff_rxns)
 %
