@@ -45,6 +45,7 @@ cplex.Param.output.clonelog.Cur=0;
 %cplex.solve();
 cplex.populate();
 
+%pop solutions from pools
 numsol=size(cplex.Solution.pool.solution,1);
 if numsol>0
     x=zeros(size(cplex.Solution.pool.solution(1).x,1),numsol);
@@ -54,9 +55,6 @@ if numsol>0
 else
     x=[];
 end
-
-
-
 
 % end function
 end
