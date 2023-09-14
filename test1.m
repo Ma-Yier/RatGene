@@ -9,7 +9,7 @@ websave('iMM904.mat','http://bigg.ucsd.edu/static/models/iMM904.mat');
 load('iMM904.mat');
 model=iMM904;
 
-% tset TMGR>0
+% test TMGR>0
 model1=model;
 model1.lb(find(strcmp('EX_o2_e',model.rxns)))=-20;
 model1.lb(find(strcmp('EX_glc__D_e',model.rxns)))=-15;
