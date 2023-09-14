@@ -11,7 +11,7 @@ load('iMM904.mat');
 load('iJR904.mat');
 model=iMM904;
 
-% tset TMGR>0
+% test TMGR>0
 model1=model;
 model1.lb(find(strcmp('EX_o2_e',model.rxns)))=-20;
 model1.lb(find(strcmp('EX_glc__D_e',model.rxns)))=-15;
