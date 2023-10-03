@@ -7,7 +7,7 @@ function [geneKnock] = verifyRatioGene(model,geneValue)
 %INPUTS
 %   model          The same struct type as the .mat file 
 %                  downloaded from BiGG
-%   geneValue      The numerical valueof gene variables
+%   geneValue      The numerical value of gene variables
 %                  in the solution
 %
 %OUTPUTS
