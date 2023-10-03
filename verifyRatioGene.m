@@ -11,7 +11,7 @@ function [geneKnock] = verifyRatioGene(model,geneValue)
 %                  in the solution
 %
 %OUTPUTS
-%   geneKnock      The strategy indicates gene knouckouts
+%   geneKnock      The strategy indicates reaction knouckouts
 %
 %
 % July 31, 2023    Ma Yier
