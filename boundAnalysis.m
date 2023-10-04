@@ -1,8 +1,30 @@
 function [minTarget,maxTarget] = boundAnalysis(model,kogene,id_biomass,id_target)
-%UNTITLED 此处显示有关此函数的摘要
-%   此处显示详细说明
+%Analyze the minimum bound and maximum bound of target reaction under a
+%condistion that a certain modification strategy is applied to the model
+%and the biomass growth reaction is maximized.
+%
+%function [minTarget,maxTarget] ...,
+%   = boundAnalysis(model,kogene,id_biomass,id_target)
+%
+%INPUTS
+%   model       The same struct type as the .mat file downloaded from BiGG
+%   kogene      A modification strategy indicates which genes to be added
+%               or deleted.
+%   id_biomass  Biomass growth reaction ID
+%   id_target   Target metabolite production reaction ID
+%
+%OUTPUTS
+%   minTarget   Minimum reaction rate when biomass reaction is maximized
+%               in another words, the worst case.
+%   maxTarget   Maximum reaction rate when biomass reaction is maximized
+%               in another words, the best case.
+%
+%
+% October 5, 2023   Ma Yier
+%
 
-% init
+
+% init return variables
 minTarget=0;
 maxTarget=0;
 
