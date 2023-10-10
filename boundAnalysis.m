@@ -47,14 +47,14 @@ model2.c(id_biomass)=0;
 model2.c(id_target)=1;
 
 % bet case analysis
-[~,FVAL1]=cplexlp(-model1.c,[],[],model1.S,model1.b,model1.lb,model1.ub);
+[~,FVAL1]=cplexlp(-model2.c,[],[],model2.S,model2.b,model2.lb,model2.ub);
 maxTarget=(-1)*FVAL1;
 if maxTarget<=0.001
     maxTarget=0;
 end
 
 % worst case analysis
-[~,minTarget]=cplexlp(model1.c,[],[],model1.S,model1.b,model1.lb,model1.ub);
+[~,minTarget]=cplexlp(model2.c,[],[],model2.S,model2.b,model2.lb,model2.ub);
 if minTarget<=0.001
     minTarget=0;
 end
