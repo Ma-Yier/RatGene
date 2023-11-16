@@ -66,7 +66,7 @@ NOTE: Solutions except for *xTarget* are optional outputs.
 ***
 ### Running Examples
 #### Example 1
-The `test1.m` demostrates the process of computing a gene knockout strategy for the production of ethanol which is a valuable biofuel and industrial solvent in yeast fermentation. The model used is [`iMM904`](http://bigg.ucsd.edu/models/iMM904) downloaded from [BiGG](http://bigg.ucsd.edu/) database. Run the following code in the command line of MATLAB:
+The `test1.m` demostrates the process of computing a gene knockout strategy for the production of glycerol which is used as a solvent, sweetening agent, and also as medicine in yeast fermentation. The model used is [`iMM904`](http://bigg.ucsd.edu/models/iMM904) downloaded from [BiGG](http://bigg.ucsd.edu/) database. Run the following code in the command line of MATLAB:
 ```
 test1
 ```
@@ -74,19 +74,34 @@ Then the results will be save in `results_test1.mat` and be printed as:
 ```
 The TMGR is: 0.9662 mmol/gDW/h 
 continue to RatGene...
-The number of gene knockouts is: 455 
-The target reaction rate with the strategy applied: 11.4718 mmol/gDW/h 
+The number of gene knockouts is: 528 
+The target reaction rate with the strategy applied: 0.6583 mmol/gDW/h 
+--------------------
+The target reaction rate in worst case: 0.6583 mmol/gDW/h 
+The target reaction rate in best case: 0.6583 mmol/gDW/h  
 ```
 #### Example 2
-The `test2.m` displays another instance of computing a gene modification strategy with both deletions and additions for the production of isobuanol which is a potential biofuel and a chemical building block used in various industries by yeast fermentation. The two models used are [`iMM904`](http://bigg.ucsd.edu/models/iMM904) and[`iJR904`](http://bigg.ucsd.edu/models/iJR904). Run the following code in the command line of MATLAB:
+The `test2.m` displays another instance of computing a gene modification strategy with both deletions and additions for the production of formate which is a potential building block for flavors and fragrances used in various industries by yeast fermentation. The two models used are [`iMM904`](http://bigg.ucsd.edu/models/iMM904) and[`iJR904`](http://bigg.ucsd.edu/models/iJR904). Run the following code in the command line of MATLAB:
 ```
 test2
 ```
 Then the results will be save in `results_test2.mat` and be printed as:
 ```
-The TMGR is: 0.9662 mmol/gDW/h 
+The metabolite is Formate  
 continue to RatGene...
-The number of gene knockouts is: 554  
-The number of gene additions is: 71
-The target reaction rate with the strategy applied: 4556.3086 mmol/gDW/h 
+The number of gene knockouts is: 205 
+The number of gene additions is: 351 
+The target reaction rate with the strategy applied: 192.6837 mmol/gDW/h 
+--------------------
+The target reaction rate in worst case: 192.6837 mmol/gDW/h 
+The target reaction rate in best case: 238.3193 mmol/gDW/h 
+```
+#### Example 1
+The `test3.m` demostrates the process of integrating two models. The models used are the toy network models. Run the following code in the command line of MATLAB:
+```
+test3
+```
+Then the results will be save in `results_test3.mat` and be printed as:
+```
+
 ```
