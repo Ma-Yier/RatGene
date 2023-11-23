@@ -47,4 +47,4 @@ fprintf('The target reaction rate with the strategy applied: %.4f mmol/gDW/h \n'
 disp("--------------------");
 fprintf('The target reaction rate in worst case: %.4f mmol/gDW/h \n', minTarget);
 fprintf('The target reaction rate in best case: %.4f mmol/gDW/h \n', maxTarget);
-%save('results_test1.mat');
+save('results_test1.mat');
