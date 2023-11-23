@@ -96,7 +96,7 @@ The target reaction rate with the strategy applied: 192.6837 mmol/gDW/h
 The target reaction rate in worst case: 192.6837 mmol/gDW/h 
 The target reaction rate in best case: 238.3193 mmol/gDW/h 
 ```
-#### Example 1
+#### Example 3
 The `test3.m` demostrates the process of integrating two models. The models used are the toy network models. Run the following code in the command line of MATLAB:
 ```
 test3
