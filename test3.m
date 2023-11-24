@@ -28,12 +28,12 @@ rxnSplit=numel(toyCore.rxns);
 geneSplit=numel(toyCore.genes);
 delList=find(knockout(1:geneSplit)==0);
 addList=find([zeros(geneSplit,1);knockout(geneSplit+1:numel(knockout))]);
-fprintf('Deletion gene/(s) is/are: \n');
+fprintf('Deleted gene/(s) is/are: \n');
 for i=1:numel(delList)
     fprintf(' ');
     disp(model.genes{delList(i),1});
 end
-fprintf('Addition gene/(s) is/are: \n');
+fprintf('Added gene/(s) is/are: \n');
 for i=1:numel(addList)
     fprintf(' ');
     disp(model.genes{addList(i),1});
@@ -48,12 +48,12 @@ fprintf('Reduce addition size: %i-->%i \n',preNumKnockouts(2),afterNumKnockouts(
 disp('------------------------------');
 newDelList=find(newKnockouts(1:geneSplit)==0);
 newAddList=find([zeros(geneSplit,1);newKnockouts(geneSplit+1:numel(newKnockouts))]);
-fprintf('Reduced deletion gene/(s) is/are: \n');
+fprintf('Reduced deletions are: \n');
 for i=1:numel(newDelList)
     fprintf(' ');
     disp(model.genes{newDelList(i),1});
 end
-fprintf('Reduced addition gene/(s) is/are: \n');
+fprintf('Reduced additions are: \n');
 for i=1:numel(newAddList)
     fprintf(' ');
     disp(model.genes{newAddList(i),1});

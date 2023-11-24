@@ -110,14 +110,14 @@ The id of target is 9
 Solve the problem to find the strategy...
 Target reaction rate: 1.00 
 ------------------------------------------
-Deletion gene/(s) is/are: 
+Deleted gene/(s) is/are: 
  gene1
  gene2
  gene3
  gene4
  gene6
  gene7
-Addition gene/(s) is/are: 
+Added gene/(s) is/are: 
  gene8
  gene9
 ------------------------------------------
@@ -125,13 +125,13 @@ Reduce size processing...
 Reduce deletion size: 6-->5 
 Reduce addition size: 2-->2 
 ------------------------------
-Reduced deletion gene/(s) is/are: 
+Reduced deletions are: 
  gene1
  gene2
  gene4
  gene6
  gene7
-Reduced addition gene/(s) is/are: 
+Reduced additions are: 
  gene8
  gene9
 ```
