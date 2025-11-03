@@ -7,6 +7,10 @@ Growth to production ratio-based design algorithms for constraint-based metaboli
 
 A ratio-based generalized approach that is capable of fulfilling a variety of modification criteria at both the gene and reaction levels. Additionally, RatGene also delivers the results with reduced-size strategies for the deletion or addition on both gene levels.
 
+Cite our paper:
+
+Ma Y, Tamura T. RatGene: Gene deletion-addition algorithms using growth to production ratio for growth-coupled production in constraint-based metabolic networks[J]. IEEE Transactions on Computational Biology and Bioinformatics, 2025.
+
 
 ## Dependencies
 
