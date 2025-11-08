@@ -5,7 +5,7 @@ Growth to production ratio-based design algorithms for constraint-based metaboli
 
 ## Introduction
 
-A ratio-based generalized approach that is capable of fulfilling a variety of modification criteria at both the gene and reaction levels. Additionally, RatGene also delivers the results with reduced-size strategies for the deletion or addition on both gene levels.
+A ratio-based generalized approach that is capable of fulfilling a variety of modification criteria at both the gene and reaction levels. Additionally, RatGene also delivers the results with reduced-size strategies for the deletion or addition on both gene levels. You can also find the Python version [here](https://github.com/Ma-Yier/RatGenePy/tree/main).
 
 Cite our paper:
 
