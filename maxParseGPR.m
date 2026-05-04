@@ -69,7 +69,7 @@ for i=1:nRxn
                gprUnitElement=split(gprUnit,' ');
                gprUnitEleNum=size(gprUnitElement,1);
                parInfoUnit{unitLabel,2}=gprUnitElement{2,1};
-               for j=2:uint8((gprUnitEleNum+1)/2)
+               for j=2:uint16((gprUnitEleNum+1)/2)
                   gprUnitElement(j,:)=[];                  
                end
                parInfoUnit{unitLabel,3}=gprUnitElement;
